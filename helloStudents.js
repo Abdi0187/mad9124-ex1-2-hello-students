@@ -7,3 +7,29 @@
 
 // 3. Print out the number of last names starting with the letter D
 // e.g. Count of last names starting with D is 1
+
+
+let students = require('./students.json')
+
+
+for (let myLoop of students) 
+{
+  console.log('Hello ' + myLoop.firstName + ' ' + myLoop.lastName)
+  
+ 
+  
+}
+
+let count = 0
+
+for (let myLoop of students){
+
+    if (myLoop.lastName.includes("D", 0)) {
+        count++;
+    }
+
+
+}
+
+
+console.log(count)
